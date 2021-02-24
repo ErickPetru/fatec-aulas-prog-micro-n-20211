@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programação em Microinformática - Exemplo 02</title>
+</head>
+<body>
+  <!-- A tag h1 é o título principal no corpo da página. -->
+  <h1>Exemplo 02</h1>
+  <p>Exemplo pedindo dois números para o usuário e somando.</p>
+
+  <script>
+    /*
+     * Aqui estamos fazendo conversões com parseFloat diretamente
+     * na mesma instrução, a partir do retorno do prompt (que é String).
+     */
+    let n1 = parseFloat(prompt('Digite um número:'))
+    let n2 = parseFloat(prompt('Digite outro número:'))
+
+    let r = n1 + n2 // Aqui faz uma soma pois está trabalhando com Number.
+
+    // Se não conseguir converter para number, a resposta é:
+    // NaN (abreviação de "Not a Number" em inglês).
+
+    document.write(`A soma de ${n1} e ${n2} é <b>${r}</b>.`)
+  </script>
+</body>
+</html>
